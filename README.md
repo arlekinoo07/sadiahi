@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sidiahi Training
 
-## Getting Started
+Многостраничный тренировочный сайт на `Next.js` и `Tailwind CSS`.
 
-First, run the development server:
+В проекте есть:
+- главная страница с обзором программы,
+- страница плана по неделям,
+- страница управления тренировками,
+- страница восстановления,
+- локальное редактирование тренировок через `localStorage` без базы данных.
+
+## Локальный запуск
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Приложение откроется на [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Проверка проекта
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build -- --webpack
+```
 
-## Learn More
+## Деплой на Vercel
 
-To learn more about Next.js, take a look at the following resources:
+Проект уже подходит для деплоя на Vercel как обычное `Next.js` приложение.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Рекомендуемые настройки:
+- Framework Preset: `Next.js`
+- Install Command: `npm install`
+- Build Command: `npm run build`
+- Output Directory: `.next`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Минимальная рекомендуемая версия Node.js:
 
-## Deploy on Vercel
+```bash
+>=20
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Git
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Сейчас изменения уже сохранены в ветке:
+
+```bash
+codex/training-site-expansion
+```
+
+И в коммите:
+
+```bash
+74bd3b6
+```
+
+Чтобы я сразу подключил GitHub-репозиторий и запушил код, пришли команды из нового репозитория или просто ссылку на него.
