@@ -25,31 +25,31 @@ export default function Home() {
                 возможностью редактировать свои тренировки.
               </p>
 
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <div className="mt-6 flex flex-col gap-3 2xl:grid 2xl:grid-cols-2">
                 <Link
                   href="/workouts"
-                  className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-2xl bg-[#ff8a3d] px-4 py-3 text-center text-sm font-bold uppercase leading-tight tracking-[0.14em] text-white transition-transform duration-300 hover:-translate-y-0.5 sm:px-5 sm:tracking-[0.18em]"
+                  className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-2xl bg-[#ff8a3d] px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-white transition-transform duration-300 hover:-translate-y-0.5 sm:tracking-[0.16em]"
                 >
                   Управлять тренировками
                 </Link>
                 <Link
                   href="/plan"
-                  className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center text-sm font-bold uppercase leading-tight tracking-[0.14em] text-white transition-colors duration-300 hover:bg-white/10 sm:px-5 sm:tracking-[0.18em]"
+                  className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-white transition-colors duration-300 hover:bg-white/10 sm:tracking-[0.16em]"
                 >
                   Смотреть план
                 </Link>
               </div>
 
-              <div className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+              <div className="mt-8 grid gap-3 sm:grid-cols-2 2xl:grid-cols-4">
                 {statCards.map((item) => (
                   <div
                     key={item.label}
                     className="cursor-pointer rounded-[1.4rem] border border-white/10 bg-white/5 px-4 py-4 backdrop-blur transition-transform duration-300 hover:-translate-y-1 hover:bg-white/8"
                   >
-                    <p className="text-xs uppercase tracking-[0.22em] text-white/45">
+                    <p className="text-[11px] font-semibold tracking-[0.06em] text-white/45 sm:text-xs sm:tracking-[0.12em]">
                       {item.label}
                     </p>
-                    <p className="mt-3 text-2xl font-bold text-white">
+                    <p className="mt-3 text-2xl font-bold leading-tight text-white">
                       {item.value}
                     </p>
                   </div>
@@ -94,7 +94,7 @@ export default function Home() {
                     </p>
                     <p className="mt-2 text-3xl font-black">Прогрессивная</p>
                   </div>
-                  <p className="max-w-[9rem] rounded-full bg-[#151515] px-3 py-1 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.12em] text-white sm:max-w-none sm:text-xs sm:tracking-[0.18em]">
+                  <p className="rounded-full bg-[#151515] px-3 py-1 text-center text-[11px] font-bold uppercase tracking-[0.08em] text-white sm:text-xs sm:tracking-[0.14em]">
                     Режим тренера
                   </p>
                 </div>
@@ -130,7 +130,7 @@ export default function Home() {
                   Сначала выстраиваем привычку.
                 </h2>
               </div>
-              <p className="max-w-[8rem] cursor-pointer rounded-full border border-white/20 px-3 py-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-[0.12em] transition-transform duration-300 hover:-translate-y-0.5 sm:max-w-none sm:text-xs sm:tracking-[0.18em]">
+              <p className="rounded-full border border-white/20 px-3 py-1 text-center text-[11px] font-semibold uppercase tracking-[0.08em] transition-transform duration-300 hover:-translate-y-0.5 sm:text-xs sm:tracking-[0.14em]">
                 Ритм 6 дней
               </p>
             </div>
@@ -216,7 +216,7 @@ export default function Home() {
                 {item.focus.map((focus) => (
                   <span
                     key={focus}
-                    className="cursor-pointer max-w-full rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-[0.08em] text-white/72 transition-colors duration-300 hover:bg-white/8 sm:text-xs sm:tracking-[0.12em]"
+                    className="cursor-pointer rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-semibold tracking-[0.04em] text-white/72 transition-colors duration-300 hover:bg-white/8 sm:text-xs sm:tracking-[0.08em]"
                   >
                     {focus}
                   </span>

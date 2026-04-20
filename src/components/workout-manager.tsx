@@ -126,7 +126,7 @@ export function WorkoutManager() {
           />
           <button
             type="submit"
-            className="min-h-12 cursor-pointer rounded-2xl bg-[#111] px-4 py-3 text-center text-sm font-bold uppercase leading-tight tracking-[0.14em] text-white transition-transform duration-300 hover:-translate-y-0.5 sm:px-5 sm:tracking-[0.18em]"
+            className="min-h-12 cursor-pointer rounded-2xl bg-[#111] px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.1em] text-white transition-transform duration-300 hover:-translate-y-0.5 sm:tracking-[0.14em]"
           >
             Добавить тренировку
           </button>
@@ -156,13 +156,13 @@ export function WorkoutManager() {
             >
               <div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="max-w-full rounded-full bg-[#ff8a3d] px-3 py-1 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.1em] text-white">
+                  <span className="rounded-full bg-[#ff8a3d] px-3 py-1 text-center text-[11px] font-bold tracking-[0.04em] text-white">
                     {item.category}
                   </span>
-                  <span className="max-w-full rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.1em] text-white/70">
+                  <span className="rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-bold tracking-[0.04em] text-white/70">
                     {item.day}
                   </span>
-                  <span className="max-w-full rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.1em] text-white/70">
+                  <span className="rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-bold tracking-[0.04em] text-white/70">
                     {item.duration}
                   </span>
                 </div>
@@ -174,7 +174,7 @@ export function WorkoutManager() {
               <button
                 type="button"
                 onClick={() => removeItem(item.id)}
-                className="min-h-11 cursor-pointer rounded-2xl border border-white/10 px-4 py-3 text-center text-xs font-bold uppercase leading-tight tracking-[0.12em] text-white transition-colors duration-300 hover:bg-white/10"
+                className="min-h-11 cursor-pointer rounded-2xl border border-white/10 px-4 py-3 text-center text-xs font-bold uppercase tracking-[0.08em] text-white transition-colors duration-300 hover:bg-white/10"
               >
                 Удалить
               </button>

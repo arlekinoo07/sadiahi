@@ -30,7 +30,7 @@ export default function PlanPage() {
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/45">
                 {item.week}
               </p>
-              <span className="rounded-full border border-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.15em] text-white/70">
+              <span className="rounded-full border border-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-white/70 sm:tracking-[0.15em]">
                 Этап {index + 1}
               </span>
             </div>
@@ -51,7 +51,7 @@ export default function PlanPage() {
               {item.focus.map((focus) => (
                 <span
                   key={focus}
-                  className="max-w-full rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-[0.08em] text-white/74 sm:text-xs sm:tracking-[0.12em]"
+                  className="rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-semibold tracking-[0.04em] text-white/74 sm:text-xs sm:tracking-[0.08em]"
                 >
                   {focus}
                 </span>
