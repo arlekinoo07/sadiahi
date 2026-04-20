@@ -11,7 +11,7 @@ export default function Home() {
     <main className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 py-5 sm:px-6 sm:py-8 lg:px-8">
       <section className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="rounded-[2rem] border border-white/10 bg-[#131313] p-5 shadow-[0_30px_100px_rgba(0,0,0,0.35)] sm:p-8">
-          <p className="mb-4 inline-flex cursor-pointer rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#ffd6a5] transition-transform duration-300 hover:-translate-y-0.5">
+          <p className="mb-4 inline-flex cursor-pointer whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#ffd6a5] transition-transform duration-300 hover:-translate-y-0.5">
             План тренировок на 8 недель
           </p>
           <div className="grid gap-8 xl:grid-cols-[1.1fr_0.9fr]">
@@ -28,13 +28,13 @@ export default function Home() {
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/workouts"
-                  className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-2xl bg-[#ff8a3d] px-5 text-sm font-bold uppercase tracking-[0.18em] text-white transition-transform duration-300 hover:-translate-y-0.5"
+                  className="inline-flex min-h-12 cursor-pointer items-center justify-center whitespace-nowrap rounded-2xl bg-[#ff8a3d] px-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition-transform duration-300 hover:-translate-y-0.5"
                 >
                   Управлять тренировками
                 </Link>
                 <Link
                   href="/plan"
-                  className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 text-sm font-bold uppercase tracking-[0.18em] text-white transition-colors duration-300 hover:bg-white/10"
+                  className="inline-flex min-h-12 cursor-pointer items-center justify-center whitespace-nowrap rounded-2xl border border-white/10 bg-white/5 px-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition-colors duration-300 hover:bg-white/10"
                 >
                   Смотреть план
                 </Link>
@@ -94,7 +94,7 @@ export default function Home() {
                     </p>
                     <p className="mt-2 text-3xl font-black">Прогрессивная</p>
                   </div>
-                  <p className="rounded-full bg-[#151515] px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-white">
+                  <p className="rounded-full bg-[#151515] px-3 py-1 text-center text-xs font-bold uppercase tracking-[0.18em] text-white sm:whitespace-nowrap">
                     Режим тренера
                   </p>
                 </div>
@@ -130,7 +130,7 @@ export default function Home() {
                   Сначала выстраиваем привычку.
                 </h2>
               </div>
-              <p className="cursor-pointer rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] transition-transform duration-300 hover:-translate-y-0.5">
+              <p className="cursor-pointer rounded-full border border-white/20 px-3 py-1 text-center text-xs font-semibold uppercase tracking-[0.18em] transition-transform duration-300 hover:-translate-y-0.5 sm:whitespace-nowrap">
                 Ритм 6 дней
               </p>
             </div>

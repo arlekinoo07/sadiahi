@@ -126,7 +126,7 @@ export function WorkoutManager() {
           />
           <button
             type="submit"
-            className="min-h-12 cursor-pointer rounded-2xl bg-[#111] px-5 text-sm font-bold uppercase tracking-[0.18em] text-white transition-transform duration-300 hover:-translate-y-0.5"
+            className="min-h-12 cursor-pointer whitespace-nowrap rounded-2xl bg-[#111] px-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition-transform duration-300 hover:-translate-y-0.5"
           >
             Добавить тренировку
           </button>
@@ -174,7 +174,7 @@ export function WorkoutManager() {
               <button
                 type="button"
                 onClick={() => removeItem(item.id)}
-                className="min-h-11 cursor-pointer rounded-2xl border border-white/10 px-4 text-xs font-bold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-white/10"
+                className="min-h-11 cursor-pointer whitespace-nowrap rounded-2xl border border-white/10 px-4 text-center text-xs font-bold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-white/10"
               >
                 Удалить
               </button>
