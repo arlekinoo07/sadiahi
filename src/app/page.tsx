@@ -11,12 +11,12 @@ export default function Home() {
     <main className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 py-5 sm:px-6 sm:py-8 lg:px-8">
       <section className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="rounded-[2rem] border border-white/10 bg-[#131313] p-5 shadow-[0_30px_100px_rgba(0,0,0,0.35)] sm:p-8">
-          <p className="mb-4 inline-flex cursor-pointer whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#ffd6a5] transition-transform duration-300 hover:-translate-y-0.5">
+          <p className="mb-4 inline-flex max-w-full cursor-pointer rounded-full border border-white/10 bg-white/5 px-4 py-2 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-[#ffd6a5] transition-transform duration-300 hover:-translate-y-0.5 sm:text-xs sm:tracking-[0.25em]">
             План тренировок на 8 недель
           </p>
           <div className="grid gap-8 xl:grid-cols-[1.1fr_0.9fr]">
             <div>
-              <h1 className="max-w-xl text-4xl font-black uppercase leading-[0.9] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-xl text-4xl font-black uppercase leading-[0.92] tracking-[-0.03em] text-white sm:text-6xl lg:text-7xl">
                 Сайт для тренировок, прогресса и своего сплита.
               </h1>
               <p className="mt-5 max-w-xl text-sm leading-7 text-white/72 sm:text-lg">
@@ -25,16 +25,16 @@ export default function Home() {
                 возможностью редактировать свои тренировки.
               </p>
 
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 <Link
                   href="/workouts"
-                  className="inline-flex min-h-12 cursor-pointer items-center justify-center whitespace-nowrap rounded-2xl bg-[#ff8a3d] px-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition-transform duration-300 hover:-translate-y-0.5"
+                  className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-2xl bg-[#ff8a3d] px-4 py-3 text-center text-sm font-bold uppercase leading-tight tracking-[0.14em] text-white transition-transform duration-300 hover:-translate-y-0.5 sm:px-5 sm:tracking-[0.18em]"
                 >
                   Управлять тренировками
                 </Link>
                 <Link
                   href="/plan"
-                  className="inline-flex min-h-12 cursor-pointer items-center justify-center whitespace-nowrap rounded-2xl border border-white/10 bg-white/5 px-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition-colors duration-300 hover:bg-white/10"
+                  className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center text-sm font-bold uppercase leading-tight tracking-[0.14em] text-white transition-colors duration-300 hover:bg-white/10 sm:px-5 sm:tracking-[0.18em]"
                 >
                   Смотреть план
                 </Link>
@@ -94,7 +94,7 @@ export default function Home() {
                     </p>
                     <p className="mt-2 text-3xl font-black">Прогрессивная</p>
                   </div>
-                  <p className="rounded-full bg-[#151515] px-3 py-1 text-center text-xs font-bold uppercase tracking-[0.18em] text-white sm:whitespace-nowrap">
+                  <p className="max-w-[9rem] rounded-full bg-[#151515] px-3 py-1 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.12em] text-white sm:max-w-none sm:text-xs sm:tracking-[0.18em]">
                     Режим тренера
                   </p>
                 </div>
@@ -130,7 +130,7 @@ export default function Home() {
                   Сначала выстраиваем привычку.
                 </h2>
               </div>
-              <p className="cursor-pointer rounded-full border border-white/20 px-3 py-1 text-center text-xs font-semibold uppercase tracking-[0.18em] transition-transform duration-300 hover:-translate-y-0.5 sm:whitespace-nowrap">
+              <p className="max-w-[8rem] cursor-pointer rounded-full border border-white/20 px-3 py-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-[0.12em] transition-transform duration-300 hover:-translate-y-0.5 sm:max-w-none sm:text-xs sm:tracking-[0.18em]">
                 Ритм 6 дней
               </p>
             </div>
@@ -181,7 +181,7 @@ export default function Home() {
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/45">
               План по неделям
             </p>
-            <h2 className="mt-3 text-3xl font-black uppercase text-white sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-black uppercase leading-[0.95] text-white sm:text-4xl">
               Восемь этапов. Один понятный прогресс.
             </h2>
           </div>
@@ -202,9 +202,9 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-white/45">
                 {item.week}
               </p>
-              <h3 className="mt-3 text-2xl font-black uppercase leading-none text-white">
-                {item.title}
-              </h3>
+                <h3 className="mt-3 text-2xl font-black uppercase leading-[0.95] text-white">
+                  {item.title}
+                </h3>
               <p className="mt-3 text-sm leading-6 text-white/65">{item.goal}</p>
               <div className="mt-4 rounded-[1.2rem] bg-black/22 px-4 py-3">
                 <p className="text-xs uppercase tracking-[0.18em] text-white/40">
@@ -216,7 +216,7 @@ export default function Home() {
                 {item.focus.map((focus) => (
                   <span
                     key={focus}
-                    className="cursor-pointer rounded-full border border-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white/72 transition-colors duration-300 hover:bg-white/8"
+                    className="cursor-pointer max-w-full rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-[0.08em] text-white/72 transition-colors duration-300 hover:bg-white/8 sm:text-xs sm:tracking-[0.12em]"
                   >
                     {focus}
                   </span>

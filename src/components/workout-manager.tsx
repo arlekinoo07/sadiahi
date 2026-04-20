@@ -76,7 +76,7 @@ export function WorkoutManager() {
         <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#7d694d]">
           Своя тренировка
         </p>
-        <h2 className="mt-3 text-3xl font-black uppercase leading-none text-[#111]">
+        <h2 className="mt-3 text-3xl font-black uppercase leading-[0.95] text-[#111]">
           Добавляй и убирай любые занятия.
         </h2>
         <p className="mt-3 text-sm leading-6 text-black/65">
@@ -126,7 +126,7 @@ export function WorkoutManager() {
           />
           <button
             type="submit"
-            className="min-h-12 cursor-pointer whitespace-nowrap rounded-2xl bg-[#111] px-5 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition-transform duration-300 hover:-translate-y-0.5"
+            className="min-h-12 cursor-pointer rounded-2xl bg-[#111] px-4 py-3 text-center text-sm font-bold uppercase leading-tight tracking-[0.14em] text-white transition-transform duration-300 hover:-translate-y-0.5 sm:px-5 sm:tracking-[0.18em]"
           >
             Добавить тренировку
           </button>
@@ -139,7 +139,7 @@ export function WorkoutManager() {
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/45">
               Мой список
             </p>
-            <h2 className="mt-3 text-3xl font-black uppercase text-white">
+            <h2 className="mt-3 text-3xl font-black uppercase leading-[0.95] text-white">
               Управление тренировками
             </h2>
           </div>
@@ -156,17 +156,17 @@ export function WorkoutManager() {
             >
               <div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="rounded-full bg-[#ff8a3d] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-white">
+                  <span className="max-w-full rounded-full bg-[#ff8a3d] px-3 py-1 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.1em] text-white">
                     {item.category}
                   </span>
-                  <span className="rounded-full border border-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-white/70">
+                  <span className="max-w-full rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.1em] text-white/70">
                     {item.day}
                   </span>
-                  <span className="rounded-full border border-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-white/70">
+                  <span className="max-w-full rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.1em] text-white/70">
                     {item.duration}
                   </span>
                 </div>
-                <h3 className="mt-4 text-2xl font-black uppercase text-white">
+                <h3 className="mt-4 text-2xl font-black uppercase leading-[0.95] text-white">
                   {item.name}
                 </h3>
               </div>
@@ -174,7 +174,7 @@ export function WorkoutManager() {
               <button
                 type="button"
                 onClick={() => removeItem(item.id)}
-                className="min-h-11 cursor-pointer whitespace-nowrap rounded-2xl border border-white/10 px-4 text-center text-xs font-bold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-white/10"
+                className="min-h-11 cursor-pointer rounded-2xl border border-white/10 px-4 py-3 text-center text-xs font-bold uppercase leading-tight tracking-[0.12em] text-white transition-colors duration-300 hover:bg-white/10"
               >
                 Удалить
               </button>

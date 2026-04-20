@@ -8,7 +8,7 @@ export default function RecoveryPage() {
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#ffd6a5]">
             Восстановление
           </p>
-          <h1 className="mt-4 text-4xl font-black uppercase leading-[0.92] text-white sm:text-6xl">
+          <h1 className="mt-4 text-4xl font-black uppercase leading-[0.94] text-white sm:text-6xl">
             Результат строится не только в зале.
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-white/68 sm:text-lg">
@@ -48,7 +48,7 @@ export default function RecoveryPage() {
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/45">
               {card.title}
             </p>
-            <h2 className="mt-4 text-3xl font-black uppercase text-white">
+            <h2 className="mt-4 text-3xl font-black uppercase leading-[0.95] text-white">
               {card.value}
             </h2>
             <p className="mt-4 text-sm leading-6 text-white/65">{card.text}</p>

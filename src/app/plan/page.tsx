@@ -7,7 +7,7 @@ export default function PlanPage() {
         <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#ffd6a5]">
           Детальный план
         </p>
-        <h1 className="mt-4 text-4xl font-black uppercase leading-[0.92] text-white sm:text-6xl">
+        <h1 className="mt-4 text-4xl font-black uppercase leading-[0.94] text-white sm:text-6xl">
           Разбивка тренировочного цикла по неделям.
         </h1>
         <p className="mt-4 max-w-3xl text-sm leading-7 text-white/68 sm:text-lg">
@@ -35,7 +35,7 @@ export default function PlanPage() {
               </span>
             </div>
 
-            <h2 className="mt-5 text-3xl font-black uppercase text-white">
+            <h2 className="mt-5 text-3xl font-black uppercase leading-[0.95] text-white">
               {item.title}
             </h2>
             <p className="mt-3 text-sm leading-6 text-white/68">{item.goal}</p>
@@ -51,7 +51,7 @@ export default function PlanPage() {
               {item.focus.map((focus) => (
                 <span
                   key={focus}
-                  className="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white/74"
+                  className="max-w-full rounded-full border border-white/10 px-3 py-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-[0.08em] text-white/74 sm:text-xs sm:tracking-[0.12em]"
                 >
                   {focus}
                 </span>
